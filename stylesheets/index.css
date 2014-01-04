@@ -1,0 +1,187 @@
+/*default*/
+ul
+{
+    list-style-type: none;
+}
+
+body
+{
+	font-family: Helvetica;
+}
+
+/*layout*/
+#content 
+{
+	text-align: center;
+	background-image: url("../img/background.gif"); 
+}
+
+#timeline
+{
+	height: 150px;
+	padding: 20px 88px;
+}
+
+#dashboard
+{
+	height: 150px;
+	padding: 20px 250px;
+}
+
+#lists
+{
+	padding: 10px 120px;
+}
+
+/*timeline*/
+#timeslider
+{
+	margin: 30px 60px 0px 60px;
+}
+
+.smonth
+{
+	float: left;
+	height: 70px;
+	width: 70px;
+	font-size: 12pt;
+	margin: 20px 28px 0px 28px;
+}
+
+.bmonth
+{
+	float: left;
+	height: 70px;
+	width: 70px;
+	color: #ff7373;
+	font-size: 26pt;
+	margin: 8px 28px 0px 28px;
+}
+
+/*dashboard*/
+#totalcost
+{
+	float: left;
+	width: 350px;
+	height: 121px;
+	margin-top: -10px;
+	margin-left: 10px;
+}
+
+#seperatecost
+{
+	float: left;
+	margin-left: 30px;
+}
+
+#Add
+{
+	float: left;
+	margin-left: 130px;
+	height: 90px;
+	width:130px;
+}
+
+/*lists*/
+.list
+{
+	border-radius: 5px;
+	background-image: url("../img/list.jpg");
+	width: 800px;
+	height: 80px;
+	margin: 15px auto;
+}
+
+.list div
+{
+	float: left;
+	font-family: Helvetica;
+}
+
+.ldate
+{
+	width: 132px;
+	color: white;
+}
+
+.dyear
+{
+	height: 20px;
+	font-size:14px;
+	margin-left: 8px;
+}
+
+.dmonth
+{
+	padding-left: 20px;
+	margin-top: -5px;
+	clear: both;
+}
+
+.mday
+{
+	font-size: 48px;
+	margin-left: -5px;
+}
+
+.mmonth
+{
+	font-size: 30px;
+}
+
+.list img
+{
+	margin-top: 10px;
+	margin-left: 16px;
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+}
+
+.litems
+{
+	margin: 15px 0px 15px 30px;
+	width: 350px;
+	font-size: 16px;
+}
+
+.litem
+{
+	margin-right: 10px;
+}
+
+.iname
+{
+	font-size: 16px;
+}
+
+.iquan
+{
+	font-size: 14px;
+}
+
+.lcost
+{
+	margin-left: 10px;
+	margin-top: 13px;
+	font-size: 38px;
+}
+
+.lcost span
+{
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
