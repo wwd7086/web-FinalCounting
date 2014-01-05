@@ -13,7 +13,8 @@ body
 #content 
 {
 	text-align: center;
-	background-image: url("../img/background.gif"); 
+	background-image: url("../img/background.gif");
+	min-height: 710px; 
 }
 
 #timeline
@@ -30,7 +31,7 @@ body
 
 #lists
 {
-	padding: 10px 120px;
+	padding: 0px 120px 15px 120px;
 }
 
 /*timeline*/
@@ -54,7 +55,7 @@ body
 	height: 70px;
 	width: 70px;
 	color: #ff7373;
-	font-size: 26pt;
+	font-size: 24pt;
 	margin: 8px 28px 0px 28px;
 }
 
@@ -65,19 +66,30 @@ body
 	width: 350px;
 	height: 121px;
 	margin-top: -10px;
-	margin-left: 10px;
+	margin-left: 50px;
+}
+
+#totalcost span:first-child
+{
+	font-size: 65pt;
+}
+
+#totalcost span:last-child
+{
+	font-size: 45pt;
+	color: grey;
 }
 
 #seperatecost
 {
 	float: left;
-	margin-left: 30px;
+	margin-left: 20px;
 }
 
 #Add
 {
 	float: left;
-	margin-left: 130px;
+	margin-left: 90px;
 	height: 90px;
 	width:130px;
 }

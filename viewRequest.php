@@ -3,10 +3,8 @@
 	$con=mysqli_connect("127.0.0.1","FoodCounting","foodcounting","FoodCounting"); 
 
 	////init
-	// $rsYear=$_REQUEST("year");
-	// $rsMonth=$_REQUEST("month");
-	$rsYear=2013;  //value for test
-	$rsMonth=11;
+	$rsYear=$_REQUEST["year"];
+	$rsMonth=$_REQUEST["month"];
 
 	$reYear=$rsYear;
 	$reMonth=$rsMonth+1;
@@ -63,7 +61,7 @@
 			{
 				$place=$plRow[0];
 				//query foods
-				$qFood="select Food.name, Purchase.quantity
+				$qFood="select Food.name, Purchase.quantity, Food.price
 						from Purchase, Food
 						where Purchase.FID=Food.FID
 						and date='".$date."' and PID=".$people.
@@ -73,7 +71,11 @@
 
 				//build xml
 				$list=$xml->addChild('list');
-				$list->addChild('date',$date);
+				$ldate=$list->addChild('date');
+				$parts=explode("-", $date);
+				$ldate->addChild('year', $parts[0]);
+				$ldate->addChild('month', $parts[1]);
+				$ldate->addChild('day', $parts[2]);
 				$list->addChild('people',$people);
 				$list->addChild('place',$place);
 				$items=$list->addChild('items');
@@ -83,7 +85,11 @@
 					$item=$items->addChild('item');
 					$item->addChild('name',$fRow[0]);
 					$item->addChild('quantity',$fRow[1]);
+					$cost=$cost+($fRow[1]*$fRow[2]);
 				}
+
+				$list->addChild('cost',$cost);
+				$cost=0;
 			}
 		}
 	}
