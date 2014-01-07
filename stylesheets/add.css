@@ -1,0 +1,38 @@
+#content 
+{
+	text-align: center;
+	background-image: url("../img/background.gif");
+	min-height: 710px; 
+	padding: 50px;
+}
+
+#food
+{
+	font-size: 20px;
+	width: 400px;
+	margin: 0px auto;
+}
+
+table
+{
+	margin: 0px auto;
+}
+
+td
+{
+	padding: 6px;
+}
+
+form p
+{
+	font-size: 24px;
+	text-align: center;
+	margin: 0px auto;
+	padding-left: 60px;
+}
+
+#submit
+{
+	margin: 30px auto;
+}
+

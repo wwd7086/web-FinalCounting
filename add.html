@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Food Accounting</title>
+  <meta charset="utf-8">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/add.css"/>
+  <link rel="stylesheet" type="text/css" href="stylesheets/jquery-ui.css"/>
+
+  <!-- scripts -->
+  <script type="text/javascript" src="scripts/jquery-2.0.3.js"></script>
+  <script type="text/javascript" src="scripts/jquery-ui.js"></script>
+  <script type="text/javascript" src="scripts/add.js"></script>
+</head>
+
+<body class="home" data-scroll-index='00'>
+  <header>
+    <h1><a id="top" data-scroll-goto='00'>Food Counting<em> up</em></a></h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" data-scroll-nav="01" style="color: #333333;">Overview</a></li>
+        <li><a data-scroll-nav="02">History</a></li>
+        <li><a data-scroll-nav="03">Analysis</a></li>
+      </ul>
+    </nav>
+    
+    <div class="email"><p><a href="mailto:wwd7086@gmail.com">Donate</a></p>
+    </div>
+  </header>
+  
+  <div id="content">
+    <form id="food" action="doAdd.php" method="post">
+      <p>Information</p>
+      <table>
+        <tr>
+          <td>Date:</td>
+          <td><input type="text" name="date" id="datepicker"/></td>
+        </tr>
+        <tr>
+          <td>Name:</td>
+          <td><input type="text" name="name"/></td>
+        </tr>
+        <tr>
+          <td>Place:</td>
+          <td><input type="text" name="place"/></td>
+        </tr>
+      </table>
+      <br/>
+      <p>Items</p>
+      <table>  
+        <tr>
+          <td>Food:</td>
+          <td><input type="text" name="food"/></td>
+        </tr>
+        <tr>
+          <td>Quantity:</td>
+          <td><input type="text" name="quantity"/></td>
+        </tr>
+      </table>
+      <button id="submit">submit</button>
+    </form>   
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <p>© 2013–2023  • Site designed &amp; developed by Wenda Wang, Wu yang, Wang Tieci</p>
+    </div>
+  </footer>
+
+</body>
+</html>

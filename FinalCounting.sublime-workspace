@@ -1,0 +1,222 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 49.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: Java"
+			],
+			[
+				"list ",
+				"Package Control: List Packages"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"jva",
+				"Set Syntax: Java"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"pacakage ",
+				"Package Control: Install Package"
+			],
+			[
+				"pacak ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 118.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/wwd/Developer/Sites/FinalCounting.sublime-workspace",
+		"/Users/wwd/Developer/Sites/FoodAccounting/Load_Food_Chart.php",
+		"/Users/wwd/Developer/Sites/FoodAccounting/index.php",
+		"/Users/wwd/Developer/Sites/FoodAccounting/serial.js",
+		"/Users/wwd/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/wwd/Developer/workspace for java/mychat/src/Server/ChatServer.java",
+		"/Users/wwd/Developer/Sites/OnlineCounting/insert.html",
+		"/Users/wwd/Desktop/text.html",
+		"/Users/wwd/Developer/git/Alfred wrokflows/alfred2-google-workflow/Rakefile",
+		"/Users/wwd/Developer/git/Alfred wrokflows/alfred2-google-workflow/version.json",
+		"/Users/wwd/Developer/git/Alfred wrokflows/alfred2-google-workflow/README.md",
+		"/Users/wwd/Developer/git/jackcompiler/src/JackAnalyzer.java",
+		"/Users/wwd/Developer/workspace for titanium/Java Script/picture.html",
+		"/Users/wwd/Developer/Sites/PhPwork/String.php",
+		"/Users/wwd/Developer/workspace for titanium/DTD/appointment.dtd",
+		"/Users/wwd/Developer/workspace for java/XML/src/sax/WorkingHoursCheckerMain.java",
+		"/Users/wwd/Developer/Sites/PhPwork/welcome.html",
+		"/Users/wwd/Developer/Sites/OnlineCounting/insert.php",
+		"/Users/wwd/Desktop/FoodCounting.sql",
+		"/Users/wwd/Developer/Sites/OnlineCounting/date.js",
+		"/Users/wwd/Developer/Sites/OnlineCounting/insert.css",
+		"/Users/wwd/Developer/workspace for java/Calculator/src/CalculatorWindow.java"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Sublime",
+			".php",
+			"		</",
+			"li",
+			"this",
+			"super",
+			"DEFAULT",
+			"food"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 131.0,
+	"status_bar_visible": true
+}

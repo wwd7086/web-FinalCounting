@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.sublime-project",
+				"*.sublime-workspace"
+			],
+			"path": "/Users/wwd/Developer/Sites/FinalCounting"
+		},
+		{
+			"path": "/Users/wwd/Developer/Sites/FoodAccounting"
+		},
+		{
+			"path": "/Users/wwd/Developer/Sites/OnlineCounting"
+		}
+	]
+}

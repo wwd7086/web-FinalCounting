@@ -1,0 +1,68 @@
+﻿#content 
+{
+    text-align: center;
+    background-image: url("../img/background.gif");
+    min-height: 710px;
+    padding: 50px 20px 20px 0px;
+}
+
+a
+{
+    outline: none;
+}
+
+div.menuTree
+{
+    width: 170px;
+    margin-left: 100px;
+    float: left;
+    border: 3px solid grey;
+    border-radius: 10px;
+}
+div.menuTree UL
+{
+    font-size: 80%;
+    padding: 0px;
+    margin: 0px;
+    display:none;
+    text-align: left;
+}
+div.menuTree UL LI
+{
+    list-style: none;
+    padding: 0px;
+    padding-left: 20px;
+    margin: 0px;
+    white-space: nowrap;
+    line-height: 40px;
+}
+div.menuTree UL LI.parent A
+{
+    color: black;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+div.menuTree UL LI.parent A:hover
+{
+    font-weight: bold;
+    font-size: 110%;
+}
+div.menuTree UL LI.child A
+{
+    color: grey;
+    text-decoration: none;
+    padding: 0px 2px;
+}
+div.menuTree UL LI.child A:hover
+{
+    font-weight: bold;
+    font-size: 110%;
+}
+
+#chartdiv {
+	width: 1050px;
+    height: 650px;
+	float: left;
+	margin-bottom: 10px;
+    margin-left: 30px;
+}

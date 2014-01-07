@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <script src="scripts/amcharts.js" type="text/javascript"></script>
+  <script src="scripts/chart-serial.js" type="text/javascript"></script> 
+  <title>food_chart</title>
+</head>
+<body>
+    <script>
+        AmCharts.loadJSON = function ( url ) {
+            // create the request
+            if (window.XMLHttpRequest) {
+                // IE7+, Firefox, Chrome, Opera, Safari
+                var request = new XMLHttpRequest();
+            }
+            else {
+                // code for IE6, IE5
+                var request = new ActiveXObject( 'Microsoft.XMLHTTP' );
+            }
+    
+            // load data
+           
+            request.open( "GET", url, false );
+            request.send(null);
+            
+            return eval( request.responseText );
+        };         
+    </script>
+    
+    <div id="chartdiv" style="width: 500px; height: 500px;margin-left:auto;margin-right:auto;"></div>
+    
+    <script>     
+            var chart;
+            AmCharts.ready(function() {
+            var chartData = AmCharts.loadJSON( 'Load_FoodChart.php' );
+             
+            chart = new AmCharts.AmSerialChart();
+            chart.dataProvider = chartData;
+            chart.categoryField = "place";
+            
+            // column graph
+            var graph_1 = new AmCharts.AmGraph();
+            graph_1.valueField = "value";
+            graph_1.type = "column";
+            graph_1.balloonText = "[[category]]: <b>[[value]]</b>";
+            chart.addGraph(graph_1);
+            
+            //modificatin
+            var categoryAxis = chart.categoryAxis;
+            categoryAxis.autoGridCount  = false;
+            categoryAxis.gridCount = chartData.length;
+            categoryAxis.gridPosition = "start";
+            categoryAxis.labelRotation = 45;
+            categoryAxis.axisColor = "#DADADA";
+            
+            //3D
+            graph_1.fillAlphas = 0.8;
+            chart.angle = 30;
+            chart.depth3D = 45;
+            
+            //line graph
+            var graph2 = new AmCharts.AmGraph();
+            graph2.type = "line";
+            graph2.lineColor = "#27c5ff";
+            graph2.bulletColor = "#FFFFFF";
+            graph2.bulletBorderColor = "#27c5ff";
+            graph2.bulletBorderThickness = 2;
+            graph2.bulletBorderAlpha = 1;
+            graph2.title = "Expenses";
+            graph2.valueField = "price";
+            graph2.lineThickness = 2;
+            graph2.bullet = "round";
+            graph2.fillAlphas = 0;
+            
+            chart.addGraph(graph2);
+            
+            chart.write("chartdiv");
+        });
+    </script>    
+</body>
+</html>
