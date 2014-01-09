@@ -81,6 +81,19 @@ function refreshList(xml, xsl)
   $("#lists").html(resultDocument).show(350);
 
   //add new cost
+  var total=xml.getElementsByTagName("total")[0].childNodes[0].nodeValue.split(".");
+
+  if(total.length==1)
+  {
+    $("#totalcost span:first-child").text(total[0]);
+    $("#totalcost span:last-child").text("."+"00"+"€");
+  }
+  else
+  {
+    $("#totalcost span:first-child").text(total[0]);
+    $("#totalcost span:last-child").text("."+total[1]+"€");
+  }
+
 }
 
 ////event handlers for ui
