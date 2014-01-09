@@ -25,9 +25,11 @@
 	$people=0;
 	$place="";
 	$cost=0;
+	$total=0;
 
 	//create the xml
-	$xml=new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><lists></lists>');
+	$xml=new SimpleXMLElement('<?xml version="1.0" encoding="utf-8"?><data></data>');
+	$lists=$xml->addChild('lists');
 
 	//query date
 	$qDate="select distinct date 
@@ -70,7 +72,7 @@
 				// showResult($fResult);
 
 				//build xml
-				$list=$xml->addChild('list');
+				$list=$lists->addChild('list');
 				$ldate=$list->addChild('date');
 				$parts=explode("-", $date);
 				$ldate->addChild('year', $parts[0]);
@@ -89,10 +91,12 @@
 				}
 
 				$list->addChild('cost',$cost);
+				$total=$total+$cost;
 				$cost=0;
 			}
 		}
 	}
+	$xml->addChild('total', $total);
 
 	Header('Content-type: text/xml');
 	echo $xml->asXML();

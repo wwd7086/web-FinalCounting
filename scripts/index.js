@@ -79,6 +79,8 @@ function refreshList(xml, xsl)
 
   //add new list
   $("#lists").html(resultDocument).show(350);
+
+  //add new cost
 }
 
 ////event handlers for ui
