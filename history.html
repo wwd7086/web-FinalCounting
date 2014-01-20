@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Food Accounting</title>
+  <meta charset="utf-8">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="stylesheets/style.css" />
+  <link rel="stylesheet" href="stylesheets/history.css" />
+</head>
+
+<body class="home" data-scroll-index='00'>
+  <header>
+    <h1><a id="top" data-scroll-goto='00'>Food Counting<em> up</em></a></h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" data-scroll-nav="01" >Overview</a></li>
+        <li><a href="history.html" data-scroll-nav="02" style="color: #333333;">History</a></li>
+        <li><a href="analysis.html" data-scroll-nav="03">Analysis</a></li>
+      </ul>
+    </nav>
+    
+    <div class="email"><p><a href="mailto:wwd7086@gmail.com">Donate</a></p>
+    </div>
+  </header>
+  
+  <div id="content">
+
+    <form action="requestHistory.php" method="get" style="font-size:28px; width: 500px; margin:10px auto">
+		date:<br/>
+		from<input name="from" type="text" style="width:200px" onfocus="HS_setDate(this)">
+		to<input name="to" type="text" style="width:200px" onfocus="HS_setDate(this)"><br/>
+    	Name: <input name="name" type="text" name="Name" /><br/>
+    	Place: <input name="place" type="text" name="Place" /><br/>
+    	<input type="submit" value="Submit" />
+    </form>
+
+  </div>
+
+  <footer>
+    <div class="wrapper">
+      <p>© 2013–2023  • Site designed &amp; developed by Wenda Wang, Wu yang, Wang Tieci</p>
+    </div>
+  </footer>
+
+</body>
+</html>

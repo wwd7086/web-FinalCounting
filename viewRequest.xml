@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<lists>
+		<list>
+			<date>
+				<year>2013</year>
+				<month>12</month>
+				<day>15</day>
+			</date>
+			<people>0001</people>
+			<place>aldi</place>
+			<items>
+				<item>
+					<name>salat</name>
+					<quantity>2</quantity>
+				</item>
+			</items>
+			<cost>3.98</cost>
+		</list>
+		<list>
+			<date>
+				<year>2013</year>
+				<month>12</month>
+				<day>15</day>
+			</date>
+			<people>0001</people>
+			<place>real</place>
+			<items>
+				<item>
+					<name>ginger</name>
+					<quantity>5</quantity>
+				</item>
+			</items>
+			<cost>4.95</cost>
+		</list>
+	</lists>
+	<total>8.93</total>
+</data>
